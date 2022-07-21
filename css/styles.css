@@ -769,74 +769,104 @@ transition: opacity 250ms, visibility 250ms;
 }
     
 
-    .backdrop.is-hidden {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }  
+.backdrop.is-hidden {
+ opacity: 0;
+ visibility: hidden;
+ pointer-events: none;
+}  
 
-    .modal {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+.modal {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 528px;
+ height: 521px;
+ padding: 40px;
+ background-color: var(--primary-bg-color);
+ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14), 
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+    }
+.modal-btn {
+ position: absolute;
+ width: 30px;
+ height: 30px;
 
-        width: 528px;
-        height: 521px;
-        background-color: var(--primary-bg-color);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-         0px 1px 1px rgba(0, 0, 0, 0.14), 
-         0px 2px 1px rgba(0, 0, 0, 0.2);
-         border-radius: 4px;
+right: 8px;
+top: 8px; 
+border-radius: 50%; 
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
     }
-    .modal-btn {
-        
-       position: absolute;
-       width: 30px;
-       height: 30px;
-      
-      right: 8px;
-      top: 8px; 
-      border-radius: 50%; 
-      background: #FFFFFF;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-    }
-        .modal-btn svg {
-            position: absolute;
-            transform: translate(-50%, -50%);
-            fill: #000000;
-            align-items: center;
-            justify-content: center;
-        }
-        .form {
-            display: flex;
-            font-display: auto;
-            flex-direction: column;
-            gap: 28px;
-            /* width: 448px;
-            height: 40px; */
-            padding: ;
-        }
-            .mailing-form{
-                display: flex;
-                margin-left: 109px;
-            }
-            .mailing-titel {
-                margin-left: 109px;
-                margin-top: 0;
-                margin-bottom: 20px;
-            }
-            .mailing-btn{
+.modal-btn svg {
+position: absolute;
+transform: translate(-50%, -50%);
+fill: #000000;
+align-items: center;
+justify-content: center;
+}
+ .form {
+    display: flex;
+ font-display: auto;
+ flex-direction: column;
+ gap: 28px;
+         }
+.mailing-form{
+    display: flex;
+    margin-left: 109px;
+}
+.mailing-titel {
+    margin-left: 109px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.mailing-btn{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;    
 width: 200px;
 height: 50px;
 margin-left: 12px;
-                        }
-                        .mailing input {
-                            width: 358px;
-                            height: 50px;
-                            background-color: transparent;
-                            border: 1px solid rgba(255, 255, 255, 0.3);
-                                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-                                border-radius: 4px;
-                                
-                        }
+padding: 10px 29px;  
+}
+
+.mailing-btn svg {
+    width: 24px;
+    height: 24px;
+
+}
+
+.mailing input {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding-left: 16px;
+        padding-right: 16px;
+    
+        
+}
+input::placeholder{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+      
+        letter-spacing: 0.03em;
+    
+        color: rgba(255, 255, 255, 0.6);
+}
+
+ .form-textarea {
+    width: 448px;
+    height: 120px;
+    resize: none;
+}
+.form-group {
+
+}

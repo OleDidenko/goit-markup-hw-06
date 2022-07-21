@@ -357,7 +357,10 @@
                 <h3 class="mailing-titel">Подпишитесь на рассылку</h3>
 <form class="mailing-form" name="mailing-form" autocomplete="on">    
     <input type="email" name="user-name" placeholder="E-mail"/>
-<button class="mailing-btn" type="submit">Подписаться</button>
+<button class="mailing-btn" type="submit">Подписаться<svg  width="12" hight="12">
+    <use href="./images/sprite.svg#icon-icon-send"></use>
+</svg>
+</button>
 </form>
               </div>
 </div>
@@ -370,8 +373,8 @@
                 <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
             </svg>
         </button>
-        <div class="window">
         <h3 class="window-titel">Оставьте свои данные, мы вам перезвоним</h3>
+        <div class="window">       
         <form class="form" name="window-form" autocomplete="on" novalidate>
             <div class="form-group">
                 <ul class="form-list">
@@ -379,29 +382,27 @@
                         <label for="user-name">Имя</label>
                         <input type="text" name="user-name" id="user-name" autofocus />
                         <svg class="form-icon" width="12" hight="12">
-                            <use href="./images/sprite.svg#icon-person"></use>
+                            <use class="icon-person" href="./images/sprite.svg#icon-person"></use>
                         </svg>
                     </li>
                     <li class="form-item">
                         <label for="user-phone">Телефон</label>
                         <input type="tel" name="user-phone" id="user-phone" />
                         <svg class="form-icon" width="13" hight="13">
-                            <use href="./images/sprite.svg#icon-phone"></use>
+                            <use class="icon-phone" href="./images/sprite.svg#icon-phone"></use>
                         </svg>
                     </li>
                     <li class="form-item">
                         <label for="user-mail">Почта</label>
                         <input type="email" name="user-mail" id="user-mail" />
                         <svg class="form-icon" width="15" hight="12">
-                            <use href="./images/sprite.svg#icon-email"></use>
+                            <use class="icon-email" href="./images/sprite.svg#icon-email"></use>
                         </svg>
                     </li>
                     <li class="form-item">
                         <label for="user-comnt">Комментарий</label>
-                        <input type="text" name="user-comn" id="user-comnt" placeholder="Введите текст" />
-                        <svg class="form-icon" width="" hight="">
-                            <use href=""></use>
-                        </svg>
+                       <textarea class="form-textarea" placeholder="Введите текст"></textarea>
+                        
                     </li>
                 </ul>
                 <p class="form-subtitel">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></p>
