@@ -48,6 +48,7 @@
       <section class="hero">
            <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
             <button class="hero-button" type="button" data-menu-open>Заказать услугу</button>
+            
       </section>
       <section class="section"> 
         <div class="container">
@@ -352,6 +353,13 @@
                     </li>
                 </ul>
               </div>
+              <div class="mailing">
+                <h3 class="mailing-titel">Подпишитесь на рассылку</h3>
+<form class="mailing-form" name="mailing-form" autocomplete="on">    
+    <input type="email" name="user-name" placeholder="E-mail"/>
+<button class="mailing-btn" type="submit">Подписаться</button>
+</form>
+              </div>
 </div>
 </div>
 </footer>
@@ -362,8 +370,48 @@
                 <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
             </svg>
         </button>
-    </div>
-</div>
+        <div class="window">
+        <h3 class="window-titel">Оставьте свои данные, мы вам перезвоним</h3>
+        <form class="form" name="window-form" autocomplete="on" novalidate>
+            <div class="form-group">
+                <ul class="form-list">
+                    <li class="form-item">
+                        <label for="user-name">Имя</label>
+                        <input type="text" name="user-name" id="user-name" autofocus />
+                        <svg class="form-icon" width="12" hight="12">
+                            <use href="./images/sprite.svg#icon-person"></use>
+                        </svg>
+                    </li>
+                    <li class="form-item">
+                        <label for="user-phone">Телефон</label>
+                        <input type="tel" name="user-phone" id="user-phone" />
+                        <svg class="form-icon" width="13" hight="13">
+                            <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
+                    </li>
+                    <li class="form-item">
+                        <label for="user-mail">Почта</label>
+                        <input type="email" name="user-mail" id="user-mail" />
+                        <svg class="form-icon" width="15" hight="12">
+                            <use href="./images/sprite.svg#icon-email"></use>
+                        </svg>
+                    </li>
+                    <li class="form-item">
+                        <label for="user-comnt">Комментарий</label>
+                        <input type="text" name="user-comn" id="user-comnt" placeholder="Введите текст" />
+                        <svg class="form-icon" width="" hight="">
+                            <use href=""></use>
+                        </svg>
+                    </li>
+                </ul>
+                <p class="form-subtitel">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></p>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+        </div>
+        </div>
+ </div>
+
 <script src="./js/modal.js"></script>
 </body>
 </html>
